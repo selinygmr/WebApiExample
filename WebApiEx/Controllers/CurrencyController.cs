@@ -9,12 +9,13 @@ using System.Web.Http;
 namespace WebApiEx.Controllers
 {
     [RoutePrefix("Currency")]
-    public class ValuesController : ApiController
+    public class CurrencyController : ApiController
     {
 
         // GET api/values/5
         [Route("Get")]
-        public string Get(string currencyCode)
+        [HttpGet]
+        public string Get(string currencyCode = "usd")
         {
             try
             {
