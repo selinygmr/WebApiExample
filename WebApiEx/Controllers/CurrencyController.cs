@@ -15,7 +15,7 @@ namespace WebApiEx.Controllers
         // GET api/values/5
         [Route("Get")]
         [HttpGet]
-        public string Get(string currencyCode = "usd")
+        public string Get(string currencyCode)
         {
             try
             {
@@ -28,7 +28,8 @@ namespace WebApiEx.Controllers
             }
             catch(Exception ex)
             {
-                return "Beklenmedik bir hata oluştu.";
+                return "Beklenmedik bir hata oluştu." +
+                    "Lütfen Redis Bağlantınızı kontrol ediniz!";
             }
         }
     }

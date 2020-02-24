@@ -13,7 +13,7 @@ using WebApiEx.Controllers;
 namespace WebApiEx.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class CurrencyControllerTest
     {
         [TestMethod]
         public void Get()
